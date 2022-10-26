@@ -12,7 +12,13 @@ const menuList = document.querySelector(".menu-content");
 console.log(menuClosed);
 
 if (menuClosed) {
+	
 	menuClosed.addEventListener("click", () => {
+		menuList.classList.toggle("open");
+		console.log("test");
+	});
+
+	menuList.addEventListener("click", () => {
 		menuList.classList.toggle("open");
 		console.log("test");
 	});
