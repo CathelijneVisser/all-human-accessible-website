@@ -46,7 +46,7 @@ nav {
 }
 
 .menu-button span {
-	background-color: var(--black);
+	background-color: var(--white);
 	height: 2.5px;
 	width: 1.5rem;
 	display: block;
@@ -100,11 +100,15 @@ body {
 }
 
 /* inleiding */
+
 .inleiding h2 {
 	padding: 1rem;
 	position: relative;
 }
 
+.inleiding p {
+	color: var(--white);
+}
 /* kaart */
 
 /* overzicht */
