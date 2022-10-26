@@ -1,18 +1,19 @@
-const allButtons = document.querySelectorAll(".js-expand");
+const allButtons = document.querySelector(".js-expand");
+const menuClosed = document.querySelector(".menu-button");
+const menuList = document.querySelector(".menu-content");
 
-allButtons.forEach((button) => {
-	button.addEventListener("click", function () {
-		console.log(button);
-		button.parentElement.classList.toggle("expand");
-	});
-});
+// allButtons.forEach((button) => {
+// 	button.addEventListener("click", function () {
+// 		console.log(button);
+// 		button.parentElement.classList.toggle("expand");
+// 	});
+// });
 
-const headerTrigger = document.querySelector(".header__trigger");
-const headerList = document.querySelector(".header__list");
+console.log(menuClosed);
 
-if (headerTrigger) {
-	headerTrigger.addEventListener("click", () => {
-		headerTrigger.classList.toggle("is-open");
-		headerList.classList.toggle("is-open");
+if (menuClosed) {
+	menuClosed.addEventListener("click", () => {
+		menuList.classList.toggle("open");
+		console.log("test");
 	});
 }

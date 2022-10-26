@@ -55,6 +55,14 @@ nav {
 	border-radius: 1rem;
 }
 
+.menu-content {
+	display: none;
+}
+
+.menu-content.open {
+	display: block;
+}
+
 /* header */
 
 h1 {
