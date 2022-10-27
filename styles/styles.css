@@ -19,6 +19,7 @@
 	--white: #fff;
 	line-height: 140%;
 	--black: #110f2a;
+	--purple-opacity: rgb(82, 77, 208, 0.4)
 }
 
 body > * + * {
@@ -101,13 +102,21 @@ body {
 
 /* inleiding */
 
+.inleiding {
+	background-image: url("./assets/achtergrond-img.jpg");
+	background-color: var(--purple-opacity);
+	margin-top: 0;
+}
+
 .inleiding h2 {
 	padding: 1rem;
 	position: relative;
+	color: var(--white);
 }
 
 .inleiding p {
 	color: var(--white);
+	padding: 1rem;
 }
 /* kaart */
 
@@ -128,6 +137,11 @@ li {
 	overflow-x: hidden;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+
+.stad-naam {
+	background-color: var(--purple);
+	color: var(--white);
 }
 
 h3 {
@@ -187,11 +201,13 @@ footer {
 	background-color: var(--black);
 	display: flex;
 	justify-content: space-between;
+	margin-top: 0;
 }
 
 .footer {
 	align-self: center;
 	font-size: min(calc(0.75em + 0.75vw), 2em);
+	padding-left: 1.8rem;
 }
 
 a {
@@ -228,17 +244,107 @@ a {
 	}
 
 	ul {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
 
 	li {
-		border-right: solid 1px var(--purple);
-		width: 50%;
+			border-right: solid 1px var(--purple);
+		}
+
+	.stad-naam {
+		grid-column: 1/3;
+		width: 100%;
+	}
+
+	#utrecht {
+		grid-row: 1/2;
+	}
+
+	.tijn {
+		grid-column: 1/2 ;
+		grid-row: 2/3 ;
+	}
+
+	.sarah {
+		grid-column: 2/3 ;
+		grid-row: 2/3 ;
+	}
+
+	#schiedam {
+		grid-column: 1/3 ;
+		grid-row: 3/4 ;
+	}
+
+	.manon {
+		grid-column: 1/2 ;
+		grid-row: 4/5 ;
+	}
+
+	.ahmed {
+		grid-column: 2/3 ;
+		grid-row: 4/5 ;
+	}
+
+	#amsterdam {
+
+		grid-row: 5/6;
+	}
+
+	.olivia {
+		grid-column: 1/2 ;
+		grid-row: 6/7 ;
+	}
+
+	.karel {
+		grid-column: 2/3 ;
+		grid-row: 6/7 ;
+	}
+
+	#rotterdam {
+
+		grid-row: 7/8;
+	}
+
+	.wafa {
+		grid-column: 1/2 ;
+		grid-row: 8/9 ;
+	}
+
+	.witcher {
+		grid-column: 2/3 ;
+		grid-row: 8/9 ;
 	}
 
 	.button {
 		width: 5em;
 		height: 2em;
 	}
+
+	.menu-button {
+		display: none;
+	}
+	
+	.menu-content {
+		display: flex;	
+	}
+
+	.menu-content.open{
+		display: flex;	
+		width: 100%;
+		position: relative;
+	}
+
+	.menu-content li {
+		background-color: var(--purple);
+	
+	}
+
+	.menu-content a {
+		background-color: inherit;
+		color: var(--white);
+		height: 1rem;
+	}
+	
 }
