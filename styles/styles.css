@@ -19,7 +19,7 @@
 	--white: #fff;
 	line-height: 140%;
 	--black: #110f2a;
-	--purple-opacity: rgb(82, 77, 208, 0.4)
+	--purple-opacity: rgb(82, 77, 208, 0.4);
 }
 
 body > * + * {
@@ -103,9 +103,30 @@ body {
 /* inleiding */
 
 .inleiding {
-	background-image: url("./assets/achtergrond-img.jpg");
-	background-color: var(--purple-opacity);
 	margin-top: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.inleiding img {
+	opacity: 0.28;
+	position: absolute;
+	object-fit: cover;
+	/* top: -15rem;
+	left: -25rem; */
+	width: 100%;
+	height: 100%;
+}
+
+.inleiding ::before {
+	content: "";
+	background-color: rgb(82, 77, 208, 1);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
 }
 
 .inleiding h2 {
@@ -117,6 +138,7 @@ body {
 .inleiding p {
 	color: var(--white);
 	padding: 1rem;
+	z-index: 1;
 }
 /* kaart */
 
@@ -237,10 +259,16 @@ a {
 		display: block;
 		width: auto;
 		height: 84px;
+		align-self: flex-start;
+	}
+
+	nav {
+		justify-content: center;
 	}
 
 	h1 {
 		margin-bottom: 1em;
+		align-self: center;
 	}
 
 	ul {
@@ -250,8 +278,8 @@ a {
 	}
 
 	li {
-			border-right: solid 1px var(--purple);
-		}
+		border-right: solid 1px var(--purple);
+	}
 
 	.stad-naam {
 		grid-column: 1/3;
@@ -263,58 +291,56 @@ a {
 	}
 
 	.tijn {
-		grid-column: 1/2 ;
-		grid-row: 2/3 ;
+		grid-column: 1/2;
+		grid-row: 2/3;
 	}
 
 	.sarah {
-		grid-column: 2/3 ;
-		grid-row: 2/3 ;
+		grid-column: 2/3;
+		grid-row: 2/3;
 	}
 
 	#schiedam {
-		grid-column: 1/3 ;
-		grid-row: 3/4 ;
+		grid-column: 1/3;
+		grid-row: 3/4;
 	}
 
 	.manon {
-		grid-column: 1/2 ;
-		grid-row: 4/5 ;
+		grid-column: 1/2;
+		grid-row: 4/5;
 	}
 
 	.ahmed {
-		grid-column: 2/3 ;
-		grid-row: 4/5 ;
+		grid-column: 2/3;
+		grid-row: 4/5;
 	}
 
 	#amsterdam {
-
 		grid-row: 5/6;
 	}
 
 	.olivia {
-		grid-column: 1/2 ;
-		grid-row: 6/7 ;
+		grid-column: 1/2;
+		grid-row: 6/7;
 	}
 
 	.karel {
-		grid-column: 2/3 ;
-		grid-row: 6/7 ;
+		grid-column: 2/3;
+		grid-row: 6/7;
 	}
 
 	#rotterdam {
-
 		grid-row: 7/8;
 	}
 
 	.wafa {
-		grid-column: 1/2 ;
-		grid-row: 8/9 ;
+		grid-column: 1/2;
+		grid-row: 8/9;
 	}
 
 	.witcher {
-		grid-column: 2/3 ;
-		grid-row: 8/9 ;
+		grid-column: 2/3;
+		grid-row: 8/9;
 	}
 
 	.button {
@@ -325,26 +351,27 @@ a {
 	.menu-button {
 		display: none;
 	}
-	
+
 	.menu-content {
-		display: flex;	
+		display: flex;
 	}
 
-	.menu-content.open{
-		display: flex;	
+	.menu-content.open {
+		display: flex;
 		width: 100%;
 		position: relative;
 	}
 
 	.menu-content li {
 		background-color: var(--purple);
-	
+		border: solid 1px var(--blue);
+		height: 2rem;
 	}
 
 	.menu-content a {
 		background-color: inherit;
 		color: var(--white);
 		height: 1rem;
+		margin: 0;
 	}
-	
 }
