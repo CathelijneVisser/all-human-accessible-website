@@ -26,7 +26,7 @@ body > * + * {
 	margin-top: var(--layout-spacing);
 }
 
-nav {
+header {
 	display: flex;
 	text-align: center;
 	background-color: var(--purple);
@@ -129,6 +129,12 @@ body {
 	height: 100%;
 }
 
+.inleiding h1 {
+	padding: 1rem;
+	position: relative;
+	color: var(--white);
+}
+
 .inleiding h2 {
 	padding: 1rem;
 	position: relative;
@@ -138,7 +144,9 @@ body {
 .inleiding p {
 	color: var(--white);
 	padding: 1rem;
-	z-index: 1;
+	
+	position: relative;
+	s
 }
 /* kaart */
 
@@ -263,13 +271,40 @@ a {
 	}
 
 	nav {
-		justify-content: center;
+		margin-top: 0;
 	}
 
-	h1 {
-		margin-bottom: 1em;
-		align-self: center;
+	
+	.menu-button {
+		display: none;
 	}
+
+	.menu-content {
+		display: flex;
+		background-color: var(--purple);
+	}
+
+	.menu-content.open {
+		display: flex;
+		width: 100%;
+		position: relative;
+	}
+
+	.menu-content li {
+		background-color: var(--purple);
+			/* border: 1px solid var(--blue); */
+		padding: 0;
+		margin: 0rem 0.75rem;
+		flex-wrap: nowrap;
+		width: auto;
+	}
+
+	.menu-content a {
+		background-color: var(--purple);
+		color: var(--white);
+		height: 0.5rem;
+		margin: 0;
+	}s
 
 	ul {
 		display: grid;
@@ -348,30 +383,4 @@ a {
 		height: 2em;
 	}
 
-	.menu-button {
-		display: none;
-	}
-
-	.menu-content {
-		display: flex;
-	}
-
-	.menu-content.open {
-		display: flex;
-		width: 100%;
-		position: relative;
-	}
-
-	.menu-content li {
-		background-color: var(--purple);
-		border: solid 1px var(--blue);
-		height: 2rem;
-	}
-
-	.menu-content a {
-		background-color: inherit;
-		color: var(--white);
-		height: 1rem;
-		margin: 0;
-	}
 }
