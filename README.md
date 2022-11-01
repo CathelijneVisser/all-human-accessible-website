@@ -1,29 +1,17 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je, zoals altijd, in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+<h1>Coding the curbs</h1>
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+<h3>User story</h3>
 
-## Inhoudsopgave
+Als vervoerder van goederen wil ik, onderweg vanuit mijn voertuig, meer informatie over een smart zone kunnen bekijken, zodat ik kan zien of de zone geschikt is om mijn goederen te laden en / of lossen 
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+<h3>Beschrijving</h3>
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+De user wilt de specificaties van de smart spaces kunnen zien. O.a. hoe groot de space is en of die space vrij is. Het doel is dat als deze informatie op een zo overzichtelijk mogelijke manier op een website komt. 
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+De website heeft eerst alleen de namen van de smart spaces en de knop zodat je niet naar al te veel hoeft te kijken en alleen de informatie ziet die van toepassing is.
 
+![Screenshot (5)](https://user-images.githubusercontent.com/112855711/195318984-1402a71d-1733-4d4b-a77d-90de157be400.png)
+![opengeklapt](https://user-images.githubusercontent.com/112855711/195623033-0255e1c8-0c92-4d40-9974-3aac6321dc5d.png)
+![Screenshot (9)](https://user-images.githubusercontent.com/112855711/195319071-f7c36ae6-7e06-4d74-8ad3-8bda39b1298e.png)
+![opengeklapd](https://user-images.githubusercontent.com/112855711/195623073-4e44e9f3-91d5-4920-a239-6d79538b19cb.png)
 
-
-## Bronnen
-
-## Licentie
-
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
-
-This work is licensed under [GNU GPLv3](./LICENSE).
