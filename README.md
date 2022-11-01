@@ -12,3 +12,4 @@ De website heeft eerst alleen de namen van de smart spaces en de knop zodat je n
 
 
 
+https://cathelijnevisser.github.io/all-human-accessible-website/
