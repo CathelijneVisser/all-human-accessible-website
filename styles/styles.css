@@ -58,7 +58,7 @@ header {
 .nav {
 	display: none;
 	top: 84px;
-	right: 	0;
+	right: 0;
 }
 
 .nav.open {
@@ -146,10 +146,9 @@ body {
 .inleiding p {
 	color: var(--white);
 	padding: 1rem;
-	
 	position: relative;
-	s
 }
+
 /* kaart */
 
 /* overzicht */
@@ -162,7 +161,6 @@ ul {
 
 li {
 	padding: 2em;
-	border-bottom: solid 1px var(--purple);
 	grid-row: 1 / span 2;
 	justify-self: center;
 	display: flex;
@@ -171,9 +169,33 @@ li {
 	justify-content: space-between;
 }
 
-.stad-naam {
+.overzicht {
 	background-color: var(--purple);
 	color: var(--white);
+}
+
+.utrecht {
+	background-color: var(--white);
+	color: var(--black);
+	border-bottom: solid 1px var(--purple);
+}
+
+.schiedam {
+	background-color: var(--purple);
+	color: var(--white);
+	border-bottom: solid 1px var(--blue);
+}
+
+.amsterdam {
+	background-color: var(--white);
+	color: var(--black);
+	border-bottom: solid 1px var(--purple);
+}
+
+.rotterdam {
+	background-color: var(--purple);
+	color: var(--white);
+	border-bottom: solid 1px var(--blue);
 }
 
 h3 {
@@ -272,11 +294,14 @@ a {
 		align-self: flex-start;
 	}
 
-	nav {
+	.nav {
 		margin-top: 0;
+		top: 0;
+		height: 84px;
+		display: block;
+		position: static;
 	}
 
-	
 	.menu-button {
 		display: none;
 	}
@@ -292,9 +317,15 @@ a {
 		position: absolute;
 	} */
 
+	.nav.open {
+		height: 84px;
+		top: 0;
+		z-index: 0;
+	}
+
 	.menu-content li {
 		background-color: var(--purple);
-			/* border: 1px solid var(--blue); */
+		/* border: 1px solid var(--blue); */
 		padding: 0;
 		margin: 0rem 0.75rem;
 		flex-wrap: nowrap;
@@ -304,7 +335,6 @@ a {
 	.menu-content a {
 		background-color: var(--purple);
 		color: var(--white);
-		height: 0.5rem;
 		margin: 0;
 	}
 
@@ -312,6 +342,7 @@ a {
 		color: var(--black);
 	}
 
+	/*
 	ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -327,9 +358,9 @@ a {
 		width: 100%;
 	}
 
-	#utrecht {
+	 #utrecht {
 		grid-row: 1/2;
-	}
+	} 
 
 	.tijn {
 		grid-column: 1/2;
@@ -379,14 +410,13 @@ a {
 		grid-row: 8/9;
 	}
 
-	.witcher {
+	 .witcher {
 		grid-column: 2/3;
 		grid-row: 8/9;
-	}
+	} */
 
 	.button {
 		width: 5em;
 		height: 2em;
 	}
-
 }
