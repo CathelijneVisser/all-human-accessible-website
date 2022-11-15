@@ -55,11 +55,13 @@ header {
 	border-radius: 1rem;
 }
 
-.menu-content {
+.nav {
 	display: none;
+	top: 84px;
+	right: 	0;
 }
 
-.menu-content.open {
+.nav.open {
 	display: block;
 	/* justify-content: flex-end; */
 	z-index: 2;
@@ -284,11 +286,11 @@ a {
 		background-color: var(--purple);
 	}
 
-	.menu-content.open {
+	/* .nav.open {
 		display: flex;
 		width: 100%;
-		position: relative;
-	}
+		position: absolute;
+	} */
 
 	.menu-content li {
 		background-color: var(--purple);
